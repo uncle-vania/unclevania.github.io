@@ -1,0 +1,54 @@
+body {
+    background: url("paper.png") repeat;
+}
+
+#logo {
+    font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
+}
+
+#logo {
+    font-size: 64px;
+    font-weight: 900;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#slogan {
+    font-size: 26px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.logo, .pattern-left, .pattern-right {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo {
+    margin: 0 10px;
+}
+
+.pattern-left {
+    padding-top: 10px;
+}
+
+.pattern-right {
+    padding-bottom: 10px;
+}
+
+.pattern-left img, .pattern-right img {
+    height: 110px;
+}
+
+.pattern-right {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 480px) {
+    #logo {
+        font-size: 48px;
+    }
+    #slogan {
+        font-size: 20px;
+    }
+}
