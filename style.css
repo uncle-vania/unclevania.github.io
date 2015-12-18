@@ -134,6 +134,7 @@ a:focus, a:hover {
 
 .btn-resize i:hover {
     cursor: pointer;
+    color: #356fa7;
 }
 
 @media (min-width: 480px) {
