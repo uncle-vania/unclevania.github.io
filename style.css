@@ -95,12 +95,12 @@ a:focus, a:hover {
 }
 
 #scrollUp {
-    bottom: 20px;
+    bottom: 10px;
     right: 20px;
 }
 
 #scrollDown {
-    bottom: 20px;
+    bottom: 10px;
     left: 20px;
 }
 
@@ -189,13 +189,13 @@ a:focus, a:hover {
         height: 100%;
     }
     #scrollUp {
-        bottom: 40px;
-        right: 40px;
+        bottom: 20px;
+        right: 30px;
         font-size: 60px;
     }
     #scrollDown {
-        bottom: 40px;
-        left: 40px;
+        bottom: 20px;
+        left: 30px;
         font-size: 60px;
     }
 
