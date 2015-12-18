@@ -82,6 +82,10 @@ a:focus, a:hover {
     text-shadow: 0 0 10px #fff;
 }
 
+.logo a:focus, .logo a:hover {
+    color: inherit;
+}
+
 @media (min-width: 480px) {
     #logo {
         font-size: 64px;
@@ -120,8 +124,8 @@ a:focus, a:hover {
         background: url(vk-left.svg) repeat-y left top,
         url(vk-right.svg) repeat-y right top;
         background-size: 50px;
-        padding-left: 65px;
-        padding-right: 65px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 }
 
