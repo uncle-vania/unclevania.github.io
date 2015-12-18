@@ -101,6 +101,27 @@ a:focus, a:hover {
     opacity: .5;
 }
 
+.size-left, .size-right {
+    font-size: 42px;
+}
+
+.footer {
+    background-color: #E6E3DB;
+    border-top: 1px solid #ffffff;
+    box-shadow: 0 -1px 0 0 #c8c8c8;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+.footer img {
+    display: inline-block;
+}
+
+.footer h4 {
+    margin: 0 0 5px 0;
+}
+
 @media (min-width: 480px) {
     #logo {
         font-size: 64px;
@@ -142,6 +163,7 @@ a:focus, a:hover {
         padding-left: 60px;
         padding-right: 60px;
         padding-bottom: 30px;
+        height: 100%;
     }
     #scrollUp {
         bottom: 20px;
