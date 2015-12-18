@@ -22,7 +22,10 @@ $('#scrollUp').click(function(){
     });
 });
 
-/*
 $('.btn-resize-left i').click(function(){
-    alert('Ok!');
-})*/
+    $('.chat').animate({paddingTop: "-=60px"}, 100);
+})
+
+$('.btn-resize-right i').click(function(){
+    $('.chat').animate({paddingTop: "+=60px"}, 100);
+})
