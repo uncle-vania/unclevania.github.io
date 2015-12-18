@@ -18,14 +18,16 @@ $(window).scroll(function() {
 
 $('#scrollUp').click(function(){
     $('html, body').animate({
-        scrollTop: 0
+        scrollTop: 0,
+        duration: 600
     });
 });
 
 $('#scrollDown').click(function(){
     var page_height = $('body').height();
     $('html, body').animate({
-        scrollTop: page_height
+        scrollTop: page_height,
+        duration: 600
     });
 });
 
