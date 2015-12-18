@@ -86,17 +86,26 @@ a:focus, a:hover {
     color: inherit;
 }
 
-#scrollUp {
+#scrollUp, #scrollDown {
     display: none;
     position: fixed;
     z-index: 1000;
-    bottom: 10px;
-    right: 10px;
     font-size: 40px;
     opacity: .8;
 }
 
-#scrollUp:focus, #scrollUp:hover {
+#scrollUp {
+    bottom: 10px;
+    right: 10px;
+}
+
+#scrollDown {
+    bottom: 10px;
+    left: 10px;
+}
+
+#scrollUp:focus, #scrollUp:hover,
+#scrollDown:focus, #scrollDown:hover {
     cursor: pointer;
     opacity: .5;
 }
@@ -182,6 +191,11 @@ a:focus, a:hover {
     #scrollUp {
         bottom: 20px;
         right: 20px;
+        font-size: 60px;
+    }
+    #scrollDown {
+        bottom: 20px;
+        left: 20px;
         font-size: 60px;
     }
 
