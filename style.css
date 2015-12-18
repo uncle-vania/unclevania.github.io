@@ -91,7 +91,7 @@ a:focus, a:hover {
     position: fixed;
     z-index: 1000;
     font-size: 40px;
-    opacity: .8;
+    opacity: .5;
 }
 
 #scrollUp {
@@ -107,7 +107,7 @@ a:focus, a:hover {
 #scrollUp:focus, #scrollUp:hover,
 #scrollDown:focus, #scrollDown:hover {
     cursor: pointer;
-    opacity: .5;
+    opacity: .2;
 }
 
 .footer {
