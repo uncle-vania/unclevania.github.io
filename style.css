@@ -123,7 +123,8 @@ a:focus, a:hover {
 }
 
 .wide_wall_module .reply_text {
-    max-width: 100% !important;
+    max-width: none;
+    width: 100%;
 }
 
 .btn-resize {
