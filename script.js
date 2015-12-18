@@ -1,4 +1,4 @@
-VK.Widgets.Comments("vk_comments", {limit: 30, attach: "*"});
+VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
 
 var triggerScroll = false;
 
