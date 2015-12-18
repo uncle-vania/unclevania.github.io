@@ -21,3 +21,8 @@ $('#scrollUp').click(function(){
         scrollTop: 0
     });
 });
+
+/*
+$('.btn-resize-left i').click(function(){
+    alert('Ok!');
+})*/
