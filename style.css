@@ -29,7 +29,7 @@ body {
     vertical-align: middle;
 }
 
-.logo {
+.logo, .comments {
     background: none;
 }
 
@@ -100,13 +100,6 @@ a:focus, a:hover {
         padding-left: 70px;
         padding-right: 70px;
     }
-    .comments {
-        background: url(vk-left.svg) repeat-y left top,
-        url(vk-right.svg) repeat-y right top;
-        background-size: 40px;
-        padding-left: 40px;
-        padding-right: 40px;
-    }
     .menu i {
         display: inline-block;
     }
@@ -122,6 +115,13 @@ a:focus, a:hover {
     .chat {
         padding-bottom: 80%;
         margin-top: 0;
+    }
+    .comments {
+        background: url(vk-left.svg) repeat-y left top,
+        url(vk-right.svg) repeat-y right top;
+        background-size: 50px;
+        padding-left: 65px;
+        padding-right: 65px;
     }
 }
 
