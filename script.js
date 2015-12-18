@@ -38,3 +38,9 @@ $('.btn-resize-left i').click(function(){
 $('.btn-resize-right i').click(function(){
     $('.chat').animate({paddingTop: "+=60px"}, 100);
 })
+
+$(window).scroll(function() {
+    if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
+        $('#wcomments_more_link').click();
+    }
+});
