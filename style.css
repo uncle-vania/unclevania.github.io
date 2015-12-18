@@ -86,6 +86,21 @@ a:focus, a:hover {
     color: inherit;
 }
 
+#scrollUp {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    bottom: 10px;
+    right: 10px;
+    font-size: 40px;
+    opacity: .8;
+}
+
+#scrollUp:focus, #scrollUp:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
 @media (min-width: 480px) {
     #logo {
         font-size: 64px;
@@ -127,6 +142,12 @@ a:focus, a:hover {
         padding-left: 60px;
         padding-right: 60px;
     }
+    #scrollUp {
+        bottom: 20px;
+        right: 20px;
+        font-size: 60px;
+    }
+
 }
 
 @media (min-width: 992px) {
