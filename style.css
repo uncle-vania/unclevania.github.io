@@ -126,6 +126,10 @@ a:focus, a:hover {
     padding-bottom: 20px;
 }
 
+.wide_wall_module .reply_text {
+    max-width: 100%;
+}
+
 @media (min-width: 480px) {
     #logo {
         font-size: 64px;
