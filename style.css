@@ -2,19 +2,29 @@ body {
     background: url("paper.png") repeat;
 }
 
+.container-fluid {
+    max-width: 1600px;
+}
+
+.top-buffer {
+    margin-top: 10px;
+}
+
+
+
 #logo {
     font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
 }
 
 #logo {
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 900;
     margin-top: 0px;
     margin-bottom: 5px;
 }
 
 #slogan {
-    font-size: 26px;
+    font-size: 20px;
     margin-top: 5px;
     margin-bottom: 0;
 }
@@ -44,11 +54,29 @@ body {
     transform: rotate(180deg);
 }
 
-@media (max-width: 480px) {
+@media (min-width: 480px) {
     #logo {
-        font-size: 48px;
+        font-size: 64px;
     }
     #slogan {
-        font-size: 20px;
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 768px) {
+    .left {
+        padding-right: 5px;
+    }
+    .right {
+        padding-left: 5px;
+    }
+    .chat {
+        padding-bottom: 80%;
+    }
+}
+
+@media (min-width: 992px) {
+    .chat {
+        padding-bottom: 116%;
     }
 }
