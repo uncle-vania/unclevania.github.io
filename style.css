@@ -122,9 +122,8 @@ a:focus, a:hover {
     padding-bottom: 20px;
 }
 
-.wide_wall_module .reply_text {
-    max-width: none;
-    width: 100%;
+#vk_comments .reply_text {
+    max-width: 100%;
 }
 
 .btn-resize {
