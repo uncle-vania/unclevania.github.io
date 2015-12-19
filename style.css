@@ -211,7 +211,7 @@ a:focus, a:hover {
     }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1120px) {
     .chat {
         padding-bottom: 115.25%;
     }
