@@ -1,5 +1,5 @@
 body {
-    background: url("paper.png") repeat;
+    background: url("../img/paper.png") repeat;
 }
 
 .container-fluid {
@@ -158,8 +158,8 @@ a:focus, a:hover {
 @media (min-width: 620px) {
     .logo {
         margin: 0 10px;
-        background: url(logo-left.svg) no-repeat left bottom,
-        url(logo-right.svg) no-repeat right bottom;
+        background: url(../img/logo-left.svg) no-repeat left bottom,
+        url(../img/logo-right.svg) no-repeat right bottom;
         background-size: 50px;
         padding-left: 70px;
         padding-right: 70px;
@@ -181,11 +181,11 @@ a:focus, a:hover {
         margin-top: 0;
     }
     .comments {
-        background: url(vk-left.svg) repeat-y left top,
-        url(vk-right.svg) repeat-y right top;
-        background-size: 50px;
-        padding-left: 60px;
-        padding-right: 60px;
+        background: url(../img/lights-left.gif) repeat-y left top,
+        url(../img/lights-right.gif) repeat-y right top;
+        background-size: 30px;
+        padding-left: 55px;
+        padding-right: 55px;
         height: 100%;
     }
     #scrollUp {
