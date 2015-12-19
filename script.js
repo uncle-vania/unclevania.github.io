@@ -3,7 +3,7 @@ VK.Widgets.Comments("vk_comments", {limit: 30, attach: "*", autoPublish: 0});
 var triggerScroll = false;
 
 $(window).scroll(function() {
-    if ($(window).scrollTop() > 100) {
+    if ($(window).scrollTop() > 200) {
         if (!triggerScroll) {
             $('#scrollUp, #scrollDown').fadeIn();
             triggerScroll = true;
