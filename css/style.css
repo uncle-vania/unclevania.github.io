@@ -184,8 +184,8 @@ a:focus, a:hover {
         background: url(../img/lights-left.gif) repeat-y left top,
         url(../img/lights-right.gif) repeat-y right top;
         background-size: 30px;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 37px;
+        padding-right: 37px;
         height: 100%;
     }
     #scrollUp {
