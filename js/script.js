@@ -1,3 +1,6 @@
+swfobject.embedSWF("img/christmastree.swf", "tree", "104", "152", "9.0.0", null, null, {wmode:"transparent"});
+swfobject.embedSWF("img/christmastree.swf", "tree2", "104", "152", "9.0.0", null, null, {wmode:"transparent"});
+
 VK.Widgets.Comments("vk_comments", {limit: 40, attach: "*", autoPublish: 0});
 
 var triggerScroll = false;

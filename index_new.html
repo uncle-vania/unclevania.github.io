@@ -26,7 +26,7 @@
 <body>
 
 <!-- newyear lights -->
-<div class="b-page_newyear">
+<div class="b-page_newyear hidden-xs">
     <div class="b-page__content">
         <i class="b-head-decor">
             <i class="b-head-decor__inner b-head-decor__inner_n1">
@@ -469,23 +469,31 @@
 </div>
 
 <div class="container-fluid">
-    <div class="row text-center">
-        <div class="logo">
-            <a href="./">
-                <h1 class="text-center" id="logo">Дядя Ваня</h1>
-                <h2 class="text-center" id="slogan">Мир — Донбассу, миру — о Донбассе!</h2>
-            </a>
+    <div class="row text-center header">
+        <div class="logo-left">
+            <div id="tree"></div>
         </div>
-    </div>
-    <div class="row top-buffer text-center">
-        <div class="menu">
-            <ol class="breadcrumb">
-                <li><a href="http://goodgame.ru/topic/38931/?comment=1666991" target="_blank"><i class="fa fa-file-text-o"></i> Правила чата и стены</a></li>
-                <li><a href="http://goodgame.ru/channel/Uncle_Vania/" target="_blank"><i class="fa fa-gamepad"></i> GoodGame</a></li>
-                <li><a href="https://www.youtube.com/channel/UC-lThPtvjbo8wBZQ0b5OUPQ/videos" target="_blank"><i class="fa fa-youtube-play"></i> YouTube</a></li>
-                <li><a href="https://vk.com/id291581117" target="_blank"><i class="fa fa-vk"></i> ВКонтакте</a></li>
-                <li><a href="https://www.facebook.com/uncle.vania.999" target="_blank"><i class="fa fa-facebook-official"></i> Facebook</a></li>
-            </ol>
+        <div class="logo-text">
+            <div class="logo">
+                <a href="./">
+                    <h1 class="text-center" id="logo">
+                        <img src="img/logo-text.png" alt="Дядя Ваня">
+                    </h1>
+                    <h2 class="text-center" id="slogan">Мир — Донбассу, миру — о Донбассе!</h2>
+                </a>
+            </div>
+            <div class="menu">
+                <ol class="breadcrumb">
+                    <li><a href="http://goodgame.ru/topic/38931/?comment=1666991" target="_blank"><i class="fa fa-file-text-o"></i> Правила чата и стены</a></li>
+                    <li><a href="http://goodgame.ru/channel/Uncle_Vania/" target="_blank"><i class="fa fa-gamepad"></i> GoodGame</a></li>
+                    <li><a href="https://www.youtube.com/channel/UC-lThPtvjbo8wBZQ0b5OUPQ/videos" target="_blank"><i class="fa fa-youtube-play"></i> YouTube</a></li>
+                    <li><a href="https://vk.com/id291581117" target="_blank"><i class="fa fa-vk"></i> ВКонтакте</a></li>
+                    <li><a href="https://www.facebook.com/uncle.vania.999" target="_blank"><i class="fa fa-facebook-official"></i> Facebook</a></li>
+                </ol>
+            </div>
+        </div>
+        <div class="logo-left">
+            <div id="tree2"></div>
         </div>
     </div>
     <div class="row">
@@ -509,9 +517,24 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 comments resize">
+    <div class="row hidden-xs">
+        <div class="col-md-2 col-sm-1 bg-left">
+            <img src="img/texture_1.png" class="img-responsive">
+        </div>
+        <div class="col-md-8 col-sm-10 bg-middle">
+        </div>
+        <div class="col-md-2 col-sm-1 bg-right">
+            <img src="img/texture_1.png" class="img-responsive">
+        </div>
+    </div>
+
+    <div class="row vk_comments">
+        <div class="col-md-2 col-sm-1 bg-left bg-pattern">
+        </div>
+        <div class="col-md-8 col-sm-10 comments resize">
             <div id="vk_comments"></div>
+        </div>
+        <div class="col-md-2 col-sm-1 bg-right bg-pattern">
         </div>
     </div>
 </div>
@@ -521,7 +544,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <h4>Счётчик флагов и просмотров:</h4>
-        <a href="http://s09.flagcounter.com/more/N4t"><img src="http://s09.flagcounter.com/countxl/N4t/bg_E6E3DB/txt_333333/border_E6E3DB/columns_6/maxflags_30/viewers_3/labels_1/pageviews_1/flags_0/percent_0/" alt="Счётчик флагов" border="0" class="img-responsive"></a>
+        <a href="http://s09.flagcounter.com/more/N4t"><img src="http://s09.flagcounter.com/countxl/N4t/bg_EFEFF1/txt_333333/border_EFEFF1/columns_6/maxflags_30/viewers_3/labels_1/pageviews_1/flags_0/percent_0/" alt="Счётчик флагов" border="0" class="img-responsive"></a>
             </div>
         </div>
     </div>
@@ -533,9 +556,9 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<script src="js/newyear.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
-<script src="js/newyear.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 body {
-    background: url("../img/paper.png") repeat;
+    background: #0D1221 url("../img/new_year_background.png") repeat;
+    padding: 0;
 }
 
 .container-fluid {
@@ -10,6 +11,10 @@ body {
     margin-top: 10px;
 }
 
+.anti-buffer {
+    margin-top: -20px;
+}
+
 #logo {
     font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
     font-size: 48px;
@@ -18,45 +23,40 @@ body {
     margin-bottom: 5px;
 }
 
+#logo img {
+    height: 60px;
+}
+
 #slogan {
     font-size: 20px;
     margin-top: 5px;
     margin-bottom: 0;
 }
 
-.logo, .logo-left, .logo-right {
+.logo {
+    max-width: 610px;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+.logo-left, .logo-right, .logo-text {
     display: inline-block;
     vertical-align: middle;
 }
 
-.logo, .comments {
-    background: none;
-}
-
-.logo-left {
-    padding-top: 10px;
-}
-
-.logo-right {
-    padding-bottom: 10px;
-}
-
-.logo-left img, .logo-right img {
-    height: 110px;
-}
-
-.logo-right {
-    transform: rotate(180deg);
+.logo-left, .logo-right {
+    display: none;
 }
 
 .chat {
-    min-height: 400px;
+    min-height: 350px;
     margin-top: 15px;
 }
 
 .menu {
-    display: inline-block;
     font-weight: 600;
+    max-width: 655px;
+    margin: 10px auto 0 auto;
 }
 
 .menu i {
@@ -64,11 +64,17 @@ body {
 }
 
 .breadcrumb {
-    background-color: #e6e3db;
+    background-color: #EFEFF1;
     border: 1px solid #ffffff;
     box-shadow: 0 0 0 1px #c8c8c8;
     margin: 0 10px 10px 10px;
     padding: 5px 10px;
+}
+
+.btn-resize-left, .btn-resize-right {
+    display: inline-block;
+    width: 50%;
+    float: left;
 }
 
 a {
@@ -111,7 +117,7 @@ a:focus, a:hover {
 }
 
 .footer {
-    background-color: #E6E3DB;
+    background-color: #EFEFF1;
     border-top: 1px solid #ffffff;
     box-shadow: 0 -1px 0 0 #c8c8c8;
     padding-bottom: 5px;
@@ -127,16 +133,11 @@ a:focus, a:hover {
     margin: 0 0 5px 0;
 }
 
-.comments {
-    padding-bottom: 20px;
-}
-
 #vk_comments .reply_text {
     max-width: 100%;
 }
 
 .btn-resize {
-    margin-top: -15px;
     font-size: 42px;
     color: #233056;
 }
@@ -146,6 +147,30 @@ a:focus, a:hover {
     color: #356fa7;
 }
 
+
+.bg-left div {
+    max-width: 400px;
+}
+
+.vk_comments {
+    display: flex;
+    margin-top: 10px;
+}
+
+.bg-pattern {
+    background: url(../img/texture_2.png) top left repeat-y;
+    background-size: 100% auto;
+    background-origin: content-box;
+}
+
+.bg-left {
+    padding-right: 0;
+}
+
+.bg-right {
+    padding-left: 0;
+}
+
 @media (min-width: 480px) {
     #logo {
         font-size: 64px;
@@ -153,23 +178,18 @@ a:focus, a:hover {
     #slogan {
         font-size: 26px;
     }
-}
-
-@media (min-width: 620px) {
-    .logo {
-        margin: 0 10px;
-        background: url(../img/logo-left.svg) no-repeat left bottom,
-        url(../img/logo-right.svg) no-repeat right bottom;
-        background-size: 50px;
-        padding-left: 70px;
-        padding-right: 70px;
-    }
-    .menu i {
-        display: inline-block;
+    #logo img {
+        height: 70px;
     }
 }
 
 @media (min-width: 768px) {
+    .header {
+        margin-top: 20px;
+    }
+    .menu i {
+        display: inline-block;
+    }
     .left {
         padding-right: 5px;
     }
@@ -186,7 +206,14 @@ a:focus, a:hover {
         background-size: 30px;
         padding-left: 37px;
         padding-right: 37px;
-        height: 100%;
+    }
+    .bg-middle {
+        background: url(../img/tree.gif) no-repeat left 13px bottom,
+        url(../img/tree.gif) no-repeat right 13px bottom;
+        background-size: 30px;
+        height: 25px;
+        padding-left: 37px;
+        padding-right: 37px;
     }
     #scrollUp {
         bottom: 20px;
@@ -198,25 +225,26 @@ a:focus, a:hover {
         left: 30px;
         font-size: 60px;
     }
-
+    .btn-resize {
+        margin-top: -15px;
+        margin-bottom: -15px;
+    }
+    .vk_comments {
+        margin-top: 0;
+    }
 }
 
 @media (min-width: 992px) {
     .chat {
         padding-bottom: 115.25%;
     }
-    .comments {
-        width: 83.33333333%;
-        margin-left: 8.33333333%;
+    .logo-left, .logo-right {
+        display: inline-block;
     }
 }
 
 @media (min-width: 1120px) {
     .chat {
         padding-bottom: 115.25%;
-    }
-    .comments {
-        width: 66.66666667%;
-        margin-left: 16.66666667%;
     }
 }

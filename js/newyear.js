@@ -18,7 +18,7 @@ $(function () {
         })
     }
     function h(i) {
-        if ($.browser.msie) {
+        if ($.support.msie) {
             return window[i]
         } else {
             return document[i]
@@ -33,7 +33,7 @@ $(function () {
     };
     if (window.swfobject) {
         window.setTimeout(function () {
-            $("body").append('<div class="g-invisible"><div id="z-audio__player"></div></div>');
+            $(".comments").append('<div class="g-invisible"><div id="z-audio__player"></div></div>');
             f()
         }, 100)
     }
