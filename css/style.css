@@ -39,13 +39,9 @@ body {
     margin: 0 auto;
 }
 
-.logo-left, .logo-right, .logo-text {
+.logo-text {
     display: inline-block;
     vertical-align: middle;
-}
-
-.logo-left, .logo-right {
-    display: none;
 }
 
 .chat {
@@ -147,10 +143,6 @@ a:focus, a:hover {
     color: #356fa7;
 }
 
-.bg-left div {
-    max-width: 400px;
-}
-
 .vk_comments {
     display: flex;
     margin-top: 10px;
@@ -160,14 +152,6 @@ a:focus, a:hover {
     background: url(../img/texture_2.png) top left repeat-y;
     background-size: 100% auto;
     background-origin: content-box;
-}
-
-.bg-left {
-    padding-right: 0;
-}
-
-.bg-right {
-    padding-left: 0;
 }
 
 .snow-left {
@@ -256,10 +240,6 @@ a:focus, a:hover {
 @media (min-width: 992px) {
     .chat {
         padding-bottom: 115.25%;
-    }
-    .logo-left, .logo-right {
-        display: inline-block;
-        margin: 0 20px;
     }
 }
 
