@@ -203,6 +203,14 @@ a:focus, a:hover {
 }
 
 @media (min-width: 768px) {
+    .logo {
+        margin: 0 10px;
+        background: url(../img/logo-left.svg) no-repeat left bottom,
+        url(../img/logo-right.svg) no-repeat right bottom;
+        background-size: 50px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
     .header {
         margin-top: 10px;
     }
