@@ -185,9 +185,9 @@ a:focus, a:hover {
 }
 
 #canvas {
-    position: absolute;
-    z-index: 999999;
-    pointer-events:none;
+    position: fixed;
+    z-index: 999;
+    pointer-events: none;
 }
 
 @media (min-width: 480px) {
