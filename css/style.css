@@ -147,7 +147,6 @@ a:focus, a:hover {
     color: #356fa7;
 }
 
-
 .bg-left div {
     max-width: 400px;
 }
@@ -171,6 +170,26 @@ a:focus, a:hover {
     padding-left: 0;
 }
 
+.snow-left {
+    transform: scaleX(-1);
+    filter: FlipH;
+}
+
+.snow {
+    margin: 0;
+}
+
+.snow label {
+    font-weight: 600;
+    color: #233056;
+}
+
+#canvas {
+    position: absolute;
+    z-index: 999999;
+    pointer-events:none;
+}
+
 @media (min-width: 480px) {
     #logo {
         font-size: 64px;
@@ -185,7 +204,7 @@ a:focus, a:hover {
 
 @media (min-width: 768px) {
     .header {
-        margin-top: 20px;
+        margin-top: 10px;
     }
     .menu i {
         display: inline-block;
@@ -204,14 +223,6 @@ a:focus, a:hover {
         background: url(../img/lights-left.gif) repeat-y left top,
         url(../img/lights-right.gif) repeat-y right top;
         background-size: 30px;
-        padding-left: 37px;
-        padding-right: 37px;
-    }
-    .bg-middle {
-        background: url(../img/tree.gif) no-repeat left 13px bottom,
-        url(../img/tree.gif) no-repeat right 13px bottom;
-        background-size: 30px;
-        height: 25px;
         padding-left: 37px;
         padding-right: 37px;
     }
@@ -240,6 +251,7 @@ a:focus, a:hover {
     }
     .logo-left, .logo-right {
         display: inline-block;
+        margin: 0 20px;
     }
 }
 

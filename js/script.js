@@ -1,7 +1,7 @@
 swfobject.embedSWF("img/christmastree.swf", "tree", "104", "152", "9.0.0", null, null, {wmode:"transparent"});
 swfobject.embedSWF("img/christmastree.swf", "tree2", "104", "152", "9.0.0", null, null, {wmode:"transparent"});
 
-VK.Widgets.Comments("vk_comments", {limit: 40, attach: "*", autoPublish: 0});
+VK.Widgets.Comments("vk_comments", {limit: 20, attach: "*", autoPublish: 0});
 
 var triggerScroll = false;
 
@@ -47,3 +47,7 @@ $(window).scroll(function() {
         $('#wcomments_more_link').click();
     }
 });
+
+$('#snow').change(function(){
+    $('#canvas').toggle();
+})
