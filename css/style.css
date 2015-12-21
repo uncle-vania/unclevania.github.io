@@ -169,6 +169,10 @@ a:focus, a:hover {
     color: #3390cd;
 }
 
+.ornament {
+    padding-bottom: 5px;
+}
+
 #canvas {
     position: fixed;
     z-index: 999;
