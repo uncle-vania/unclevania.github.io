@@ -164,7 +164,7 @@ a:focus, a:hover {
     margin: 0;
 }
 
-.snow label. .ornament label {
+.snow label, .ornament label {
     font-weight: 600;
     color: #3390cd;
 }
