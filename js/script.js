@@ -50,3 +50,13 @@ $(window).scroll(function() {
 $('#snow').change(function(){
     $('#canvas').toggle();
 })
+
+$('#ornament').change(function(){
+    if (this.checked) {
+        $('.bg-left img, .bg-right img').show();
+        $('.bg-none').removeClass('bg-none').addClass('bg-pattern');
+    } else {
+        $('.bg-left img, .bg-right img').hide();
+        $('.bg-pattern').removeClass('bg-pattern').addClass('bg-none');
+    }
+})
