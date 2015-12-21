@@ -116,8 +116,8 @@ a:focus, a:hover {
     background-color: #EFEFF1;
     border-top: 1px solid #ffffff;
     box-shadow: 0 -1px 0 0 #c8c8c8;
-    padding-bottom: 5px;
-    padding-top: 10px;
+    padding-bottom: 0;
+    padding-top: 5px;
     margin-bottom: 0;
 }
 
@@ -125,8 +125,9 @@ a:focus, a:hover {
     display: inline-block;
 }
 
-.footer h4 {
-    margin: 0 0 5px 0;
+.footer h6 {
+    margin: 0;
+    font-weight: 600;
 }
 
 #vk_comments .reply_text {
@@ -172,6 +173,10 @@ a:focus, a:hover {
     position: fixed;
     z-index: 999;
     pointer-events: none;
+}
+
+.counter-block {
+    overflow: hidden;
 }
 
 @media (min-width: 480px) {
@@ -240,6 +245,9 @@ a:focus, a:hover {
 @media (min-width: 992px) {
     .chat {
         padding-bottom: 115.25%;
+    }
+    .counter-block {
+        height: 150px;
     }
 }
 
