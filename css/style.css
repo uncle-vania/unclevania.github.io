@@ -160,13 +160,17 @@ a:focus, a:hover {
     filter: FlipH;
 }
 
-.snow {
+.snow, .ornament {
     margin: 0;
 }
 
-.snow label {
+.snow label. .ornament label {
     font-weight: 600;
     color: #3390cd;
+}
+
+.ornament {
+    padding-bottom: 5px;
 }
 
 #canvas {
