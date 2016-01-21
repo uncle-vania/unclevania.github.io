@@ -1,5 +1,6 @@
 body {
     background: url("../img/paper.png") repeat;
+    padding: 0;
 }
 
 .container-fluid {
@@ -8,6 +9,10 @@ body {
 
 .top-buffer {
     margin-top: 10px;
+}
+
+.anti-buffer {
+    margin-top: -20px;
 }
 
 #logo {
@@ -50,7 +55,7 @@ body {
 }
 
 .chat {
-    min-height: 400px;
+    min-height: 350px;
     margin-top: 15px;
 }
 
@@ -69,6 +74,12 @@ body {
     box-shadow: 0 0 0 1px #c8c8c8;
     margin: 0 10px 10px 10px;
     padding: 5px 10px;
+}
+
+.btn-resize-left, .btn-resize-right {
+    display: inline-block;
+    width: 50%;
+    float: left;
 }
 
 a {
@@ -114,8 +125,8 @@ a:focus, a:hover {
     background-color: #E6E3DB;
     border-top: 1px solid #ffffff;
     box-shadow: 0 -1px 0 0 #c8c8c8;
-    padding-bottom: 5px;
-    padding-top: 10px;
+    padding-bottom: 0;
+    padding-top: 5px;
     margin-bottom: 0;
 }
 
@@ -123,8 +134,9 @@ a:focus, a:hover {
     display: inline-block;
 }
 
-.footer h4 {
-    margin: 0 0 5px 0;
+.footer h6 {
+    margin: 0;
+    font-weight: 600;
 }
 
 .comments {
@@ -136,7 +148,6 @@ a:focus, a:hover {
 }
 
 .btn-resize {
-    margin-top: -15px;
     font-size: 42px;
     color: #233056;
 }
@@ -144,6 +155,10 @@ a:focus, a:hover {
 .btn-resize i:hover {
     cursor: pointer;
     color: #356fa7;
+}
+
+.counter-block {
+    overflow: hidden;
 }
 
 @media (min-width: 480px) {
@@ -198,7 +213,10 @@ a:focus, a:hover {
         left: 30px;
         font-size: 60px;
     }
-
+    .btn-resize {
+        margin-top: -15px;
+        margin-bottom: -15px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -208,6 +226,9 @@ a:focus, a:hover {
     .comments {
         width: 83.33333333%;
         margin-left: 8.33333333%;
+    }
+    .counter-block {
+        height: 150px;
     }
 }
 
