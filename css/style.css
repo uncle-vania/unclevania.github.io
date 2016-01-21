@@ -139,10 +139,6 @@ a:focus, a:hover {
     font-weight: 600;
 }
 
-.comments {
-    padding-bottom: 20px;
-}
-
 #vk_comments .reply_text {
     max-width: 100%;
 }
