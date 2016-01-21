@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/css/ie10-viewport-bug-workaround.css">
-    <link rel="stylesheet" href="css/newyear.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -25,478 +24,24 @@
 </head>
 <body>
 
-<canvas id="canvas"></canvas>
-
-<!-- newyear lights -->
-<div class="b-page_newyear hidden-xs">
-    <div class="b-page__content">
-        <i class="b-head-decor">
-            <i class="b-head-decor__inner b-head-decor__inner_n1">
-                <div class="b-ball b-ball_n1 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n2 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n3 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n4 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n5 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n6 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n7 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-
-                <div class="b-ball b-ball_n8 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n9 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i1">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i2">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i3">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i4">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i5">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i6">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-            </i>
-            <i class="b-head-decor__inner b-head-decor__inner_n2">
-                <div class="b-ball b-ball_n1 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n2 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n3 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n4 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n5 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n6 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n7 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n8 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n9 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i1">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i2">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i3">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i4">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i5">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i6">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-            </i>
-            <i class="b-head-decor__inner b-head-decor__inner_n3">
-                <div class="b-ball b-ball_n1 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n2 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n3 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n4 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n5 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n6 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n7 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n8 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n9 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i1">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i2">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i3">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i4">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i5">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i6">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-            </i>
-            <i class="b-head-decor__inner b-head-decor__inner_n4">
-                <div class="b-ball b-ball_n1 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n2 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n3 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n4 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n5 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n6 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n7 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n8 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n9 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i1">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i2">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i3">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i4">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i5">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i6">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-            </i>
-            <i class="b-head-decor__inner b-head-decor__inner_n5">
-                <div class="b-ball b-ball_n1 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n2 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n3 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n4 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n5 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n6 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n7 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n8 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n9 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i1">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i2">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i3">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i4">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i5">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i6">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-            </i>
-            <i class="b-head-decor__inner b-head-decor__inner_n6">
-                <div class="b-ball b-ball_n1 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n2 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n3 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n4 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n5 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n6 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n7 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n8 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n9 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i1">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i2">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i3">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i4">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i5">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i6">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-            </i>
-            <i class="b-head-decor__inner b-head-decor__inner_n7">
-                <div class="b-ball b-ball_n1 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n2 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n3 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n4 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n5 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n6 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n7 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n8 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_n9 b-ball_bounce">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i1">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i2">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i3">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i4">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i5">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-                <div class="b-ball b-ball_i6">
-                    <div class="b-ball__right"></div>
-                    <div class="b-ball__i"></div>
-                </div>
-            </i>
-        </i>
-    </div>
-</div>
-
 <div class="container-fluid">
-    <div class="row text-center header">
-        <div class="logo-text">
-            <div class="logo">
-                <a href="./">
-                    <h1 class="text-center" id="logo">
-                        <img src="img/logo-text.png" alt="Дядя Ваня">
-                    </h1>
-                    <h2 class="text-center" id="slogan">Мир — Донбассу, миру — о Донбассе!</h2>
-                </a>
-            </div>
-            <div class="menu">
-                <ol class="breadcrumb">
-                    <li>
-                        <div class="checkbox snow">
-                        <label>
-                            <input type="checkbox" checked id="snow"> Снег
-                        </label>
-                    </div>
-                    </li>
-                    <li><a href="http://goodgame.ru/topic/38931/?comment=1666991" target="_blank"><i class="fa fa-file-text-o"></i> Правила</a></li>
-                    <li><a href="http://goodgame.ru/channel/Uncle_Vania/" target="_blank"><i class="fa fa-gamepad"></i> GoodGame</a></li>
-                    <li><a href="https://www.youtube.com/channel/UC-lThPtvjbo8wBZQ0b5OUPQ/videos" target="_blank"><i class="fa fa-youtube-play"></i> YouTube</a></li>
-                    <li><a href="https://vk.com/id291581117" target="_blank"><i class="fa fa-vk"></i> ВКонтакте</a></li>
-                    <li><a href="https://www.facebook.com/uncle.vania.999" target="_blank"><i class="fa fa-facebook-official"></i> Facebook</a></li>
-                </ol>
-            </div>
+    <div class="row text-center">
+        <div class="logo">
+            <a href="./">
+                <h1 class="text-center" id="logo">Дядя Ваня</h1>
+                <h2 class="text-center" id="slogan">Мир — Донбассу, миру — о Донбассе!</h2>
+            </a>
+        </div>
+    </div>
+    <div class="row top-buffer text-center">
+        <div class="menu">
+            <ol class="breadcrumb">
+                <li><a href="http://goodgame.ru/topic/38931/?comment=1666991" target="_blank"><i class="fa fa-file-text-o"></i> Правила чата и стены</a></li>
+                <li><a href="http://goodgame.ru/channel/Uncle_Vania/" target="_blank"><i class="fa fa-gamepad"></i> GoodGame</a></li>
+                <li><a href="https://www.youtube.com/channel/UC-lThPtvjbo8wBZQ0b5OUPQ/videos" target="_blank"><i class="fa fa-youtube-play"></i> YouTube</a></li>
+                <li><a href="https://vk.com/id291581117" target="_blank"><i class="fa fa-vk"></i> ВКонтакте</a></li>
+                <li><a href="https://www.facebook.com/uncle.vania.999" target="_blank"><i class="fa fa-facebook-official"></i> Facebook</a></li>
+            </ol>
         </div>
     </div>
     <div class="row">
@@ -520,29 +65,9 @@
         </div>
     </div>
 
-    <div class="row hidden-sm hidden-xs">
-        <div class="col-md-2 col-sm-1 bg-left">
-            <img src="img/texture_1.png" class="img-responsive">
-        </div>
-        <div class="col-md-8 col-sm-10 text-center">
-        </div>
-        <div class="col-md-2 col-sm-1 bg-right">
-            <img src="img/texture_1.png" class="img-responsive">
-        </div>
-    </div>
-
-    <div class="row vk_comments">
-        <div class="col-md-2 hidden-sm hidden-xs bg-left bg-pattern">
-        </div>
-        <div class="col-md-8 col-sm-12 col-xs-12 comments resize">
-            <div class="checkbox ornament text-center">
-                <label>
-                    <input type="checkbox" checked id="ornament"> Хочу красоты!
-                </label>
-            </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 comments resize">
             <div id="vk_comments"></div>
-        </div>
-        <div class="col-md-2 hidden-sm hidden-xs bg-right bg-pattern">
         </div>
     </div>
 </div>
@@ -550,21 +75,11 @@
 <div class="jumbotron footer">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-2 col-sm-2 hidden-xs text-right">
-                <div id="tree"></div>
-            </div>
-            <div class="col-md-8 col-sm-8 text-center">
+            <div class="col-md-12 col-sm-12 text-center">
                 <h6>Счётчик флагов и просмотров:</h6>
                 <div class="counter-block">
-                    <a href="http://s09.flagcounter.com/more/N4t">
-                        <img
-                                src="http://s09.flagcounter.com/countxl/N4t/bg_EFEFF1/txt_333333/border_EFEFF1/columns_6/maxflags_30/viewers_3/labels_1/pageviews_1/flags_0/percent_0/"
-                                alt="Счётчик флагов" border="0" class="img-responsive">
-                    </a>
+                    <a href="http://s09.flagcounter.com/more/N4t"><img src="http://s09.flagcounter.com/countxl/N4t/bg_E6E3DB/txt_333333/border_E6E3DB/columns_6/maxflags_30/viewers_3/labels_1/pageviews_1/flags_0/percent_0/" alt="Счётчик флагов и просмотров" border="0" class="img-responsive"></a>
                 </div>
-            </div>
-            <div class="col-md-2 col-sm-2 hidden-xs">
-                <img src="img/snowman.png" class="img-responsive">
             </div>
         </div>
     </div>
@@ -576,10 +91,9 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
-<script src="js/newyear.js"></script>
-<script src="js/snow.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
-<script src="js/script.js"></script>
+<script src="js/script.js">
+</script>
 </body>
 </html>

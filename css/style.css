@@ -1,5 +1,5 @@
 body {
-    background: #0D1221 url("../img/new_year_background.png") repeat;
+    background: url("../img/paper.png") repeat;
     padding: 0;
 }
 
@@ -23,25 +23,35 @@ body {
     margin-bottom: 5px;
 }
 
-#logo img {
-    height: 60px;
-}
-
 #slogan {
     font-size: 20px;
     margin-top: 5px;
     margin-bottom: 0;
 }
 
-.logo {
-    max-width: 610px;
-    vertical-align: middle;
-    margin: 0 auto;
-}
-
-.logo-text {
+.logo, .logo-left, .logo-right {
     display: inline-block;
     vertical-align: middle;
+}
+
+.logo, .comments {
+    background: none;
+}
+
+.logo-left {
+    padding-top: 10px;
+}
+
+.logo-right {
+    padding-bottom: 10px;
+}
+
+.logo-left img, .logo-right img {
+    height: 110px;
+}
+
+.logo-right {
+    transform: rotate(180deg);
 }
 
 .chat {
@@ -50,9 +60,8 @@ body {
 }
 
 .menu {
+    display: inline-block;
     font-weight: 600;
-    max-width: 655px;
-    margin: 10px auto 0 auto;
 }
 
 .menu i {
@@ -60,7 +69,7 @@ body {
 }
 
 .breadcrumb {
-    background-color: #EFEFF1;
+    background-color: #e6e3db;
     border: 1px solid #ffffff;
     box-shadow: 0 0 0 1px #c8c8c8;
     margin: 0 10px 10px 10px;
@@ -113,7 +122,7 @@ a:focus, a:hover {
 }
 
 .footer {
-    background-color: #EFEFF1;
+    background-color: #E6E3DB;
     border-top: 1px solid #ffffff;
     box-shadow: 0 -1px 0 0 #c8c8c8;
     padding-bottom: 0;
@@ -130,6 +139,10 @@ a:focus, a:hover {
     font-weight: 600;
 }
 
+.comments {
+    padding-bottom: 20px;
+}
+
 #vk_comments .reply_text {
     max-width: 100%;
 }
@@ -144,55 +157,8 @@ a:focus, a:hover {
     color: #356fa7;
 }
 
-.vk_comments {
-    display: flex;
-    margin-top: 10px;
-}
-
-.bg-pattern {
-    background: url(../img/texture_2.png) top left repeat-y;
-    background-size: 100% auto;
-    background-origin: content-box;
-}
-
-.snow-left {
-    transform: scaleX(-1);
-    filter: FlipH;
-}
-
-.snow, .ornament {
-    margin: 0;
-}
-
-.snow label, .ornament label {
-    font-weight: 600;
-    color: #3390cd;
-}
-
-.ornament {
-    padding-bottom: 5px;
-}
-
-#canvas {
-    position: fixed;
-    z-index: 999;
-    pointer-events: none;
-}
-
 .counter-block {
     overflow: hidden;
-}
-
-.bg-left {
-    padding-right: 0;
-}
-
-.bg-right {
-    padding-left: 0;
-}
-
-.bg-none {
-    background-image: none;
 }
 
 @media (min-width: 480px) {
@@ -202,12 +168,9 @@ a:focus, a:hover {
     #slogan {
         font-size: 26px;
     }
-    #logo img {
-        height: 70px;
-    }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 620px) {
     .logo {
         margin: 0 10px;
         background: url(../img/logo-left.svg) no-repeat left bottom,
@@ -216,12 +179,12 @@ a:focus, a:hover {
         padding-left: 70px;
         padding-right: 70px;
     }
-    .header {
-        margin-top: 10px;
-    }
     .menu i {
         display: inline-block;
     }
+}
+
+@media (min-width: 768px) {
     .left {
         padding-right: 5px;
     }
@@ -233,11 +196,12 @@ a:focus, a:hover {
         margin-top: 0;
     }
     .comments {
-        background: url(../img/lights-left.gif) repeat-y left top,
-        url(../img/lights-right.gif) repeat-y right top;
-        background-size: 30px;
-        padding-left: 37px;
-        padding-right: 37px;
+        background: url(../img/vk-left.svg) repeat-y left top,
+        url(../img/vk-right.svg) repeat-y right top;
+        background-size: 50px;
+        padding-left: 60px;
+        padding-right: 60px;
+        height: 100%;
     }
     #scrollUp {
         bottom: 20px;
@@ -253,14 +217,15 @@ a:focus, a:hover {
         margin-top: -15px;
         margin-bottom: -15px;
     }
-    .vk_comments {
-        margin-top: 0;
-    }
 }
 
 @media (min-width: 992px) {
     .chat {
         padding-bottom: 115.25%;
+    }
+    .comments {
+        width: 83.33333333%;
+        margin-left: 8.33333333%;
     }
     .counter-block {
         height: 150px;
@@ -270,5 +235,9 @@ a:focus, a:hover {
 @media (min-width: 1120px) {
     .chat {
         padding-bottom: 115.25%;
+    }
+    .comments {
+        width: 66.66666667%;
+        margin-left: 16.66666667%;
     }
 }
