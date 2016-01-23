@@ -157,6 +157,58 @@ a:focus, a:hover {
     overflow: hidden;
 }
 
+.panel-body {
+    padding: 10px 10px 0 10px;
+    background-color: #f5f2ea;
+}
+
+.panel-default>.panel-heading {
+    padding: 5px 10px;
+    background-color: #e6e3db;
+}
+
+.panel {
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 0 1px #c8c8c8;
+    margin-bottom: 15px;
+}
+
+.panel a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.panel a:focus, .panel a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+.panel th {
+    width: 130px;
+    text-align: right;
+}
+
+.panel .table>tbody>tr>th, .panel .table>tbody>tr>td {
+    border: 0;
+    padding: 0 5px 5px 5px;
+}
+
+.panel .table {
+    margin-bottom: 0;
+}
+
+.panel-body p {
+    margin-bottom: 5px;
+}
+
+.donate {
+    margin-top: 15px;
+}
+
+#donate .modal-body {
+    text-align: center;
+}
+
 @media (min-width: 480px) {
     #logo {
         font-size: 64px;
@@ -189,6 +241,9 @@ a:focus, a:hover {
     }
     .chat {
         padding-bottom: 80%;
+        margin-top: 0;
+    }
+    .donate {
         margin-top: 0;
     }
     .comments {
