@@ -274,10 +274,6 @@ a:focus, a:hover {
     .chat {
         padding-bottom: 115.25%;
     }
-    .comments {
-        width: 83.33333333%;
-        margin-left: 8.33333333%;
-    }
     .counter-block {
         height: 150px;
     }
@@ -286,9 +282,5 @@ a:focus, a:hover {
 @media (min-width: 1120px) {
     .chat {
         padding-bottom: 115.25%;
-    }
-    .comments {
-        width: 66.66666667%;
-        margin-left: 16.66666667%;
     }
 }
