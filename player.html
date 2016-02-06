@@ -1,0 +1,159 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+
+    <script type='text/javascript' language="javascript">
+        function _refreshPremium() {
+            if(typeof window.parent.chat != 'undefined') window.parent.chat._refreshPremium();
+        }
+
+        function logLags()
+        {
+            //var url = document.location.href;
+            //var src = url.substring( url.indexOf("?")+1 );
+            var src = 54105
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "http://hls.goodgame.ru/hls/" + src + ".m3u8", true);
+            xhr.responseType = 'text';
+            xhr.send();
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4 && xhr.response) {
+
+                    var headers = xhr.getAllResponseHeaders();
+                    var all = headers.split('\r\n');
+                    var $ip = "";
+                    for(var i=0;i<all.length;i++)
+                    {
+                        var d = all[i].split(": ");
+                        if(d[0]=='X-EDGE-IP') $ip = d[1];
+                    }
+
+                    if($ip) {
+                        var data = "eventName=pe_low_speed2&server="+$ip;
+                        var xhr2 = new XMLHttpRequest();
+                        xhr2.open("POST", "http://goodgame.ru/statistics/playerEvent/", true);
+                        xhr2.responseType = 'text';
+                        xhr2.send(data);
+                    }
+                }
+            };
+        }
+
+        function makeSrc()
+        {
+            //var url = document.location.href;
+            //var src = url.substring( url.indexOf("?")+1 );
+
+            var src = 54105
+
+            //var flashvars = {src: src, autoplay: !!(document.location.pathname=='/player4')};
+            var flashvars = {src: src, autoplay: true};
+            var params = {wmode:"opaque", allowFullScreen:true, allowScriptAccess:"always"};
+            var attributes = {};
+
+            swfobject.embedSWF("http://goodgame.ru/cached/ggplayer.swf?rnpq1c", "player", "100%", "100%", "10.0.0",
+                    "expressInstall.swf", flashvars, params, attributes);
+
+        }
+
+        /*window.payXsolla = function(token) {
+         try {
+         if(typeof window.parent.payXsolla != 'undefined') {
+         window.parent.payXsolla(token);
+         return true;
+         }
+         } catch ($e) { }
+         return false
+         }*/
+
+    </script>
+    <style type="text/css" media="screen">
+        html, body { height:100%; }
+        body { margin:0; padding:0; overflow:hidden; text-align:center; background-color: #000000; }
+    </style>
+</head>
+<body onload="makeSrc()">
+
+<div id="player"></div>
+
+<!--LiveInternet counter-->
+<script type="text/javascript"><!--
+new Image().src = "//counter.yadro.ru/hit?r"+
+        escape(document.referrer.replace('beta.goodgame.ru', 'goodgame.ru'))+((typeof(screen)=="undefined")?"":
+        ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+                screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+        ";"+Math.random();//-->
+</script>
+<!--/LiveInternet-->
+
+<script>
+    var streamerGA = '';
+</script>
+
+<!-- google -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3668187-1']);
+    _gaq.push(['_setDomainName', 'goodgame.ru']);
+    _gaq.push(['_trackPageview']);
+
+    if(streamerGA) {
+        _gaq.push(['streamer._setAccount', streamerGA]);
+        _gaq.push(['streamer._setDomainName', 'goodgame.ru']);
+        _gaq.push(['streamer._trackPageview']);
+    }
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<!-- /google -->
+
+<!-- tns-counter.ru -->
+<script type="text/javascript">
+    (function(win, doc, cb){
+        (win[cb] = win[cb] || []).push(function() {
+            try {
+                tnsCounterGoodgame_ru = new TNS.TnsCounter({
+                    'account':'goodgame_ru',
+                    'tmsec': 'goodgame_total'
+                });
+            } catch(e){}
+        });
+
+        var tnsscript = doc.createElement('script');
+        tnsscript.type = 'text/javascript';
+        tnsscript.async = true;
+        tnsscript.src = ('https:' == doc.location.protocol ? 'https:' : 'http:') +
+                '//www.tns-counter.ru/tcounter.js';
+        var s = doc.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(tnsscript, s);
+    })(window, this.document,'tnscounter_callback');
+</script>
+<noscript>
+    <img src="//www.tns-counter.ru/V13a****goodgame_ru/ru/UTF-8/tmsec=goodgame_total/" width="0" height="0" alt="" />
+</noscript>
+<!--/ tns-counter.ru -->
+
+<!-- Begin comScore Tag -->
+<script>
+    var _comscore = _comscore || [];
+    _comscore.push({ c1: "2", c2: "16558621" });
+    (function() {
+        var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+        el.parentNode.insertBefore(s, el);
+    })();
+</script>
+<noscript>
+    <img src="http://b.scorecardresearch.com/p?c1=2&c2=16558621&cv=2.0&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+
+</body>
+</html>
