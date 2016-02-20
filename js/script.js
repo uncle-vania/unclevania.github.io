@@ -2,6 +2,13 @@ swfobject.embedSWF("img/christmastree.swf", "tree", "104", "152", "9.0.0", null,
 
 VK.Widgets.Comments("vk_comments", {limit: 30, attach: "*", autoPublish: 0});
 
+$('#donate').on('show.bs.modal', function () {
+    $('html, body').animate({
+        scrollTop: $('#help-project').position().top,
+        duration: 600
+    });
+});
+
 var triggerScroll = false;
 
 $(window).scroll(function() {
