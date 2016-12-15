@@ -1,0 +1,286 @@
+body {
+    background: url("../img/paper.png") repeat;
+    padding: 0;
+}
+
+.container-fluid {
+    max-width: 1600px;
+}
+
+.top-buffer {
+    margin-top: 10px;
+}
+
+.anti-buffer {
+    margin-top: -20px;
+}
+
+#logo {
+    font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
+    font-size: 48px;
+    font-weight: 900;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#slogan {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.logo, .logo-left, .logo-right {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo, .comments {
+    background: none;
+}
+
+.logo-left {
+    padding-top: 10px;
+}
+
+.logo-right {
+    padding-bottom: 10px;
+}
+
+.logo-left img, .logo-right img {
+    height: 110px;
+}
+
+.logo-right {
+    transform: rotate(180deg);
+}
+
+.chat {
+    min-height: 350px;
+    margin-top: 15px;
+}
+
+.menu {
+    display: inline-block;
+    font-weight: 600;
+}
+
+.menu i {
+    display: none;
+}
+
+.breadcrumb {
+    background-color: #e6e3db;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 0 1px #c8c8c8;
+    margin: 0 10px 10px 10px;
+    padding: 5px 10px;
+}
+
+.btn-resize-left, .btn-resize-right {
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus, a:hover {
+    color: #5f5f5f;
+    text-decoration: none;
+    text-shadow: 0 0 10px #fff;
+}
+
+.logo a:focus, .logo a:hover {
+    color: inherit;
+}
+
+#scrollUp, #scrollDown {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    font-size: 40px;
+    opacity: .5;
+}
+
+#scrollUp {
+    bottom: 10px;
+    right: 20px;
+}
+
+#scrollDown {
+    bottom: 10px;
+    left: 20px;
+}
+
+#scrollUp:focus, #scrollUp:hover,
+#scrollDown:focus, #scrollDown:hover {
+    cursor: pointer;
+    opacity: .2;
+}
+
+.footer {
+    background-color: #E6E3DB;
+    border-top: 1px solid #ffffff;
+    box-shadow: 0 -1px 0 0 #c8c8c8;
+    padding-bottom: 0;
+    padding-top: 5px;
+    margin-bottom: 0;
+}
+
+.footer img {
+    display: inline-block;
+}
+
+.footer h6 {
+    margin: 0;
+    font-weight: 600;
+}
+
+#vk_comments .reply_text {
+    max-width: 100%;
+}
+
+.btn-resize {
+    font-size: 42px;
+    color: #233056;
+}
+
+.btn-resize i:hover {
+    cursor: pointer;
+    color: #356fa7;
+}
+
+.counter-block {
+    overflow: hidden;
+}
+
+.panel-body {
+    padding: 10px 10px 0 10px;
+    background-color: #f5f2ea;
+}
+
+.panel-default>.panel-heading {
+    padding: 5px 10px;
+    background-color: #e6e3db;
+}
+
+.panel {
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 0 1px #c8c8c8;
+    margin-bottom: 15px;
+}
+
+.panel a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.panel a:focus, .panel a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+.panel th {
+    width: 130px;
+    text-align: right;
+}
+
+.panel .table>tbody>tr>th, .panel .table>tbody>tr>td {
+    border: 0;
+    padding: 0 5px 5px 5px;
+}
+
+.panel .table {
+    margin-bottom: 0;
+}
+
+.panel-body p {
+    margin-bottom: 5px;
+}
+
+.donate {
+    margin-top: 15px;
+}
+
+#donate .modal-body {
+    text-align: center;
+}
+
+@media (min-width: 480px) {
+    #logo {
+        font-size: 64px;
+    }
+    #slogan {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 620px) {
+    .logo {
+        margin: 0 10px;
+        background: url(../img/logo-left.svg) no-repeat left bottom,
+        url(../img/logo-right.svg) no-repeat right bottom;
+        background-size: 50px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .menu i {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 768px) {
+    .left {
+        padding-right: 5px;
+    }
+    .right {
+        padding-left: 5px;
+    }
+    .chat {
+        padding-bottom: 80%;
+        margin-top: 0;
+    }
+    .donate {
+        margin-top: 0;
+    }
+    .comments {
+        background: url(../img/vk-left.svg) repeat-y left top,
+        url(../img/vk-right.svg) repeat-y right top;
+        background-size: 50px;
+        padding-left: 60px;
+        padding-right: 60px;
+        height: 100%;
+    }
+    #scrollUp {
+        bottom: 20px;
+        right: 30px;
+        font-size: 60px;
+    }
+    #scrollDown {
+        bottom: 20px;
+        left: 30px;
+        font-size: 60px;
+    }
+    .btn-resize {
+        margin-top: -15px;
+        margin-bottom: -15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .chat {
+        padding-bottom: 115.25%;
+    }
+    .counter-block {
+        height: 150px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .chat {
+        padding-bottom: 115.25%;
+    }
+}
