@@ -4,7 +4,7 @@ body {
 }
 
 .container-fluid {
-    max-width: 1700px;
+    max-width: 1600px;
     border: 3px solid black;
 }
 
@@ -52,7 +52,7 @@ body {
 
 .menu {
     font-weight: 600;
-    max-width: 755px;
+    max-width: 855px;
     margin: 10px auto 0 auto;
 }
 
