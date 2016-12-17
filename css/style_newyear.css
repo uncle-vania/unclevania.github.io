@@ -3,9 +3,21 @@ body {
     padding: 0;
 }
 
+.table {
+    margin-bottom: 0;
+}
+
+.table>tbody>tr>td, 
+.table>tbody>tr>th, 
+.table>tfoot>tr>td, 
+.table>tfoot>tr>th, 
+.table>thead>tr>td, 
+.table>thead>tr>th {
+    border: 0;
+}
+
 .container-fluid {
     max-width: 1600px;
-    border: 3px solid black;
 }
 
 .top-buffer {
@@ -210,7 +222,7 @@ a:focus, a:hover {
 
 @media (min-width: 768px) {
     .logo {
-        margin: 0 10px;
+        margin: 0 auto;
         background: url(../img/logo-left.svg) no-repeat left bottom,
         url(../img/logo-right.svg) no-repeat right bottom;
         background-size: 50px;
