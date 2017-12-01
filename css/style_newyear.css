@@ -64,7 +64,7 @@ body {
 
 .menu {
     font-weight: 600;
-    max-width: 855px;
+    /*max-width: 855px;*/
     margin: 10px auto 0 auto;
 }
 
