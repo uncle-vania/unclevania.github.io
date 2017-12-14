@@ -252,6 +252,20 @@ a:focus, a:hover {
         padding-left: 37px;
         padding-right: 37px;
     }
+    .comments_dvs {
+/*        background: url(../img/lights-left.gif) repeat-y left top,
+        url(../img/lights-right.gif) repeat-y right top;
+	background-size: 30px;
+        padding-left: 37px;
+        padding-right: 37px;*/
+		background: url(../img/UncleVania3_left_6.png) repeat-y left top,
+		/*url(../img/lights-left.gif) repeat-y left top,
+        url(../img/lights-right.gif) repeat-y right top;*/
+		url(../img/UncleVania3_left_6.png) repeat-y right top;
+        background-size: 50px;
+        padding-left: 55px;
+        padding-right: 55px;
+    }
     #scrollUp {
         bottom: 20px;
         right: 30px;
