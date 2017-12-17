@@ -299,3 +299,14 @@ a:focus, a:hover {
         padding-bottom: 115.25%;
     }
 }
+.panel-body-ny {
+    padding: 10px 10px 0 10px;
+    background-color: #FCFCFC;
+}
+.panel-default-ny>.panel-heading-ny {
+    padding: 5px 10px;
+    background-color: #EDEBE6;
+}
+.panel-body-ny p {
+    margin-bottom: 5px;
+}
