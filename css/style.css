@@ -1,5 +1,6 @@
 body {
     background: url("../img/paper.png") repeat;
+    /*background: url("../img/23_feb_tanki_5.jpg") repeat;*/
     padding: 0;
 }
 
@@ -21,6 +22,7 @@ body {
     font-weight: 900;
     margin-top: 0px;
     margin-bottom: 5px;
+text-align: center;
 }
 
 #slogan {
@@ -216,6 +218,8 @@ a:focus, a:hover {
     #slogan {
         font-size: 26px;
     }
+    #logo img {
+        height: 70px;
 }
 
 @media (min-width: 620px) {
@@ -254,6 +258,20 @@ a:focus, a:hover {
         padding-right: 60px;
         height: 100%;
     }
+    .comments_dvs {
+/*        background: url(../img/lights-left.gif) repeat-y left top,
+        url(../img/lights-right.gif) repeat-y right top;
+	background-size: 30px;
+        padding-left: 37px;
+        padding-right: 37px;*/
+		background: url(../img/UncleVania3_left_7.png) repeat-y left top,
+		/*url(../img/lights-left.gif) repeat-y left top,
+        url(../img/lights-right.gif) repeat-y right top;*/
+		url(../img/UncleVania3_left_7.png) repeat-y right top;
+        background-size: 50px;
+        padding-left: 55px;
+        padding-right: 55px;
+    }
     #scrollUp {
         bottom: 20px;
         right: 30px;
@@ -267,6 +285,9 @@ a:focus, a:hover {
     .btn-resize {
         margin-top: -15px;
         margin-bottom: -15px;
+    }
+    .header {
+        margin-top: 10px;
     }
 }
 
