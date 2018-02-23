@@ -1,0 +1,18 @@
+.d-page__content{min-height:50px}
+
+.d-head-decor{display:none}
+.d-page_day .d-head-decor{
+   position:absolute;
+   top:-30px;
+   left:0px;
+   display:block;
+   height:180px;
+   width:100%;
+   overflow:hidden;
+z-index:-1;
+background-position: top center;
+background-repeat:  repeat-x;
+background-image:url(../img/GeorgLenti_8.png)
+
+}
+.d-page_day .d-head-decor::before{content:'';display:block;position:absolute;top:-150px;left:0;z-index:3;height:180px;display:block;width:100%;box-shadow:0 15px 70px rgba(0,0,0,0.75)}
