@@ -1,4 +1,4 @@
 # Дядя Ваня
 Стрим о событиях на Донбассе и мире.
 
-Сайт: http://uncle-vania.ga/
+Сайт: http://uncle-vania.github.io/
