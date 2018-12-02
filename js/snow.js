@@ -2,7 +2,8 @@ window.onload = function(){
     //canvas init
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
-var firstRun = true;
+    var firstRun = true;
+    
     //canvas dimensions
     var W = window.innerWidth;
     var H = window.innerHeight;
@@ -83,10 +84,12 @@ var firstRun = true;
 
     
     //animation loop
-        setInterval(draw, 33);
-var snow = document.getElementById("snow");
-if (firstRun && !snow.checked) {
-  firstRun = false;
-  canvas.style.display = "none";
-}
+    setInterval(draw, 33);
+    
+    // hide on first load page and not checked "snow" box
+    var snow = document.getElementById("snow");
+    if (firstRun && !snow.checked) {
+      firstRun = false;
+      canvas.style.display = "none";
+    }
 }
