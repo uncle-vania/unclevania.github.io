@@ -1,7 +1,4 @@
 window.onload = function(){
-    var snow = document.getElementById("snow");
-    if (!snow.checked) return;
-    
     //canvas init
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
@@ -84,6 +81,9 @@ window.onload = function(){
         }
     }
 
+    
     //animation loop
-    setInterval(draw, 33);
+    var snow = document.getElementById("snow");
+    if (snow.checked) 
+      setInterval(draw, 33);
 }
