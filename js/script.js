@@ -1,3 +1,7 @@
+window.onload = function () {
+    $('#canvas').toggle();
+}
+
 swfobject.embedSWF("img/christmastree.swf", "tree", "104", "152", "9.0.0", null, null, {wmode:"transparent"});
 
 //VK.Widgets.Comments("vk_comments", {limit: 30, attach: "*", autoPublish: 0});
