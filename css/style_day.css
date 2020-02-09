@@ -18,4 +18,4 @@ background-image:url(../img/23_feb_tanki_5.jpg)
 background-image:url(../img/GeorgLenti_8.png)*/
 
 }
-.d-page_day .d-head-decor::before{content:'';display:block;position:absolute;top:-150px;left:0;z-index:3;height:180px;width:100%;box-shadow:0 15px 70px rgba(0,0,0,0.75)}
+.d-page_day .d-head-decor::before{content:'';display:block;position:absolute;top:-150px;left:0;z-index:3;height:100%;width:100%;box-shadow:0 15px 70px rgba(0,0,0,0.75)}
