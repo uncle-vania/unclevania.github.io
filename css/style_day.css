@@ -11,7 +11,7 @@
    overflow:hidden;
 z-index:-1;
 background-position: top center;
-background-repeat:  repeat-x;
+background-repeat:  repeat-x repeat-y;
 background-image:url(../img/23_feb_tanki_5.jpg)
 /*background-image:url(../img/GeorgLenti_8.png)*/
 
