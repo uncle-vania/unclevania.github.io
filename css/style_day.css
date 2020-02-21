@@ -7,15 +7,14 @@
    left:0px;
    display:block;
    height:180px;
-   /*height:100%;*/
    width:100%;
    overflow:hidden;
 z-index:-1;
 background-position: top center;
-/*background-repeat:  repeat-x, repeat-y;
-background-image:url(../img/23_feb_tanki_5.jpg)*/
-background-repeat:  repeat-y;
+background-repeat:  repeat-x;
 background-image:url(../img/GeorgLenti_8.png)
 
 }
-.d-page_day .d-head-decor::before{content:'';display:block;position:absolute;top:-150px;left:0;z-index:3;height:180px;width:100%;box-shadow:0 15px 70px rgba(0,0,0,0.75)}
+.d-page_day .d-head-decor::before{content:'';display:block;position:absolute;top:-150px;left:0;z-index:3;height:180px;display:block;width:100%;box-shadow:0 15px 70px rgba(0,0,0,0.75)}
+
+/*фон для 23 февраля и т.п. устанавливается в файле style.css*/
