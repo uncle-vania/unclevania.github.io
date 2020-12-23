@@ -1,4 +1,3 @@
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^(www\.)?unclevania\.ru$ [NC]
-RewriteCond %{HTTP:X-Forwarded-Proto} !=https
-RewriteRule ^(.*)$ https://unclevania.ru/$1 [R=301,L]
+RewriteCond %{HTTP:SSL} !1
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [QSA,L,R=301]
