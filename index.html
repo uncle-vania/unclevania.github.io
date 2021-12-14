@@ -11,10 +11,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/css/ie10-viewport-bug-workaround.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style_day.css">
-    <!--link rel="stylesheet" href="css/newyear.css">
-    <link rel="stylesheet" href="css/style_newyear.css"-->
+    <link rel="stylesheet" href="css/newyear.css">
+    <link rel="stylesheet" href="css/style_newyear.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -22,7 +20,7 @@
     <![endif]-->
 
     <!--style for VK vidget -->
-    <script type="text/javascript" src="//vk.com/js/api/openapi.js?168"></script>
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?169"></script>
 
     <script type="text/javascript">
         VK.init({apiId: 5192617, onlyWidgets: true});
@@ -30,44 +28,177 @@
     <!--style for VK vidget -->
 </head>
 <body>
-<!-- 23 february, lenta -->
-<!--div class="d-page_day">
-    <div class="d-page__content">
-        <i class="d-head-decor"></i>
-    </div>
-</div-->
-<!-- -->
+
+<canvas id="canvas"></canvas>
+
+
+<!-- новогодняя мотня newyear -->
+<div class="b-page_newyear">
+	<div class="b-page__content">
+	<i class="b-head-decor">
+		<i class="b-head-decor__inner b-head-decor__inner_n1">
+		  <div class="b-ball b-ball_n1 b-ball_bounce" data-note="0"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n2 b-ball_bounce" data-note="1"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n3 b-ball_bounce" data-note="2"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n4 b-ball_bounce" data-note="3"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n5 b-ball_bounce" data-note="4"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n6 b-ball_bounce" data-note="5"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n7 b-ball_bounce" data-note="6"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n8 b-ball_bounce" data-note="7"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n9 b-ball_bounce" data-note="8"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i1"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i2"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i3"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i4"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i5"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i6"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		</i>
+		<i class="b-head-decor__inner b-head-decor__inner_n2">
+		  <div class="b-ball b-ball_n1 b-ball_bounce" data-note="9"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n2 b-ball_bounce" data-note="10"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n3 b-ball_bounce" data-note="11"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n4 b-ball_bounce" data-note="12"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n5 b-ball_bounce" data-note="13"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n6 b-ball_bounce" data-note="14"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n7 b-ball_bounce" data-note="15"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n8 b-ball_bounce" data-note="16"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n9 b-ball_bounce" data-note="17"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i1"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i2"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i3"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i4"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i5"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i6"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		</i>
+		<i class="b-head-decor__inner b-head-decor__inner_n3">
+		  <div class="b-ball b-ball_n1 b-ball_bounce" data-note="18"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n2 b-ball_bounce" data-note="19"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n3 b-ball_bounce" data-note="20"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n4 b-ball_bounce" data-note="21"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n5 b-ball_bounce" data-note="22"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n6 b-ball_bounce" data-note="23"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n7 b-ball_bounce" data-note="24"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n8 b-ball_bounce" data-note="25"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n9 b-ball_bounce" data-note="26"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i1"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i2"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i3"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i4"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i5"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i6"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		</i>
+		<i class="b-head-decor__inner b-head-decor__inner_n4">
+		  <div class="b-ball b-ball_n1 b-ball_bounce" data-note="27"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n2 b-ball_bounce" data-note="28"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n3 b-ball_bounce" data-note="29"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n4 b-ball_bounce" data-note="30"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n5 b-ball_bounce" data-note="31"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n6 b-ball_bounce" data-note="32"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n7 b-ball_bounce" data-note="33"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n8 b-ball_bounce" data-note="34"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n9 b-ball_bounce" data-note="35"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i1"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i2"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i3"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i4"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i5"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i6"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		</i>
+		<i class="b-head-decor__inner b-head-decor__inner_n5">
+		  <div class="b-ball b-ball_n1 b-ball_bounce" data-note="0"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n2 b-ball_bounce" data-note="1"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n3 b-ball_bounce" data-note="2"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n4 b-ball_bounce" data-note="3"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n5 b-ball_bounce" data-note="4"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n6 b-ball_bounce" data-note="5"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n7 b-ball_bounce" data-note="6"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n8 b-ball_bounce" data-note="7"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n9 b-ball_bounce" data-note="8"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i1"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i2"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i3"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i4"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i5"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i6"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		</i>
+		<i class="b-head-decor__inner b-head-decor__inner_n6">
+		  <div class="b-ball b-ball_n1 b-ball_bounce" data-note="9"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n2 b-ball_bounce" data-note="10"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n3 b-ball_bounce" data-note="11"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n4 b-ball_bounce" data-note="12"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n5 b-ball_bounce" data-note="13"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n6 b-ball_bounce" data-note="14"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n7 b-ball_bounce" data-note="15"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n8 b-ball_bounce" data-note="16"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n9 b-ball_bounce" data-note="17"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i1"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i2"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i3"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i4"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i5"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i6"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		</i>
+		<i class="b-head-decor__inner b-head-decor__inner_n7">
+		  <div class="b-ball b-ball_n1 b-ball_bounce" data-note="18"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n2 b-ball_bounce" data-note="19"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n3 b-ball_bounce" data-note="20"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n4 b-ball_bounce" data-note="21"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n5 b-ball_bounce" data-note="22"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n6 b-ball_bounce" data-note="23"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n7 b-ball_bounce" data-note="24"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n8 b-ball_bounce" data-note="25"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_n9 b-ball_bounce" data-note="26"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i1"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i2"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i3"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i4"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i5"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		  <div class="b-ball b-ball_i6"><div class="b-ball__right"></div><div class="b-ball__i"></div></div>
+		</i>
+	</i>
+	</div>
+</div>
+<!-- новогодняя мотня newyear -->
+
 
 <div class="container-fluid">
     <div class="row text-center header">
         <div class="logo-text">
-        <!--div class="logo"-->
-            <a href="./">
-                <h1 class="text-center" id="logo">
-                    <!--img src="./dvny_files/logo-text.png" alt="Дядя Ваня"-->
-				    <img src="img/Uncle_Vania3_logo1.png" width="640" border="0"></img>
-				    <!--img src="img/Uncle_Vania3_logo2.png"  border="0"></img-->
-                </h1>
-                <div align="center"><img src="img/UncleVaniaTXT.png" width="640" border="0" vspace="5"></img></div>
-                <!--h2 class="text-center" id="slogan">Мир — Донбассу, миру — о Донбассе!</h2-->
-            </a>
-        </div>
-    </div>
-    <div class="row top-buffer text-center">
-        <div class="menu">
-            <ol class="breadcrumb">
-            <li><a href="https://goodgame.ru/topic/38931/?comment=1666991" target="_blank"><i class="fa fa-file-text-o"></i> Правила чата и стены</a></li>
+            <!--div class="logo"-->
+			<div>
+                <a href="./">
+                    <h1 class="text-center" id="logo">
+                        <!--img src="./dvny_files/logo-text.png" alt="Дядя Ваня"-->
+						            <!--img src="img/Uncle_Vania3_logo1.png" width="640" border="0"></img-->
+						            <img src="img/Uncle_Vania3_logo2.png"  border="0"></img>
+                    </h1>
+					          <img src="img/UncleVaniaTXT.png" width="640" border="0" vspace="5"></img>
+                    <!--h2 class="text-center" id="slogan">Мир — Донбассу, миру — о Донбассе!</h2-->
+                </a>
+            </div>
+            <div class="menu">
+                <ol class="breadcrumb">
+                    <li>
+                        <div class="checkbox snow">
+                        <label>
+                            <!--input type="checkbox" checked id="snow"> Снег-->
+                            <input type="checkbox" id="snow"> Снег
+                        </label>
+                    </div>
+                    </li>
+                <li><a href="https://goodgame.ru/topic/38931/?comment=1666991" target="_blank"><i class="fa fa-file-text-o"></i> Правила чата и стены</a></li>
             <li><a href="https://goodgame.ru/channel/Uncle_Vania/" target="_blank"><i class="fa fa-gg"></i> GoodGame</a></li>
             <li><a href="https://player.twitch.tv/?channel=dvstream_&enableExtensions=true&muted=true&parent=twitch.tv&player=popout&volume=1" target="_blank"><i class="fa fa-twitch"></i> Twitch</a></li>
             <!--li><a href="https://vidi.tv/embed-player/uncle_vania" target="_blank"><i class="fa fa-gamepad"></i> VIDI</a></li-->
             <li><a href="https://www.youtube.com/channel/UC-lThPtvjbo8wBZQ0b5OUPQ/videos" target="_blank"><i class="fa fa-youtube-play"></i> YouTube</a></li>
-            <li><a href="https://vk.com/uncle_vania_dn" target="_blank"><i class="fa fa-vk"></i> ВК</a></li>
-<li><a href="https://ok.ru/uncle.vania/video" target="_blank"><i class="fa fa-odnoklassniki"></i> OK</a></li>
+            <li><a href="https://vk.com/video/playlist/291581117_16" target="_blank"><i class="fa fa-vk"></i> ВК</a></li>
+<li><a href="https://ok.ru/video/c3959409" target="_blank"><i class="fa fa-odnoklassniki"></i> OK</a></li>
 <li><a href="https://vk.com/@291581117-iptv" target="_blank"><i class="fa fa-tv"></i> IPTV</a></li>
-            <li><a style="background-color:#85B7C5" href="#" data-toggle="modal" data-target="#donate"><i class="fa fa-money"></i> Поддержать</a></li>
-            <li><a style="background-color:#FFFF33" href="block.html" target="_blank"> Обход блокировки&nbsp;</a></li>
-            <li><a href="about.html" target="_blank"> О проекте&nbsp;</a></li>
-            </ol>
+                <li><a style="background-color:#85B7C5" href="#" data-toggle="modal" data-target="#donate"><i class="fa fa-money"></i> Поддержать</a></li>
+                <li><a style="background-color:#FFFF33" href="block_ny.html" target="_blank"> Обход блокировки&nbsp;</a></li>
+                <li><a href="about_ny.html" target="_blank"> О проекте&nbsp;</a></li>
+                </ol>
+            </div>
         </div>
     </div>
     <div class="row">
@@ -135,23 +266,48 @@
             </div>
         </div>
     </div>
-	
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12 comments_dvs resize">
+
+    <div class="row hidden-sm hidden-xs">
+        <div class="col-md-2 col-sm-1 bg-left">
+            <img src="img/texture_1.png" class="img-responsive">
+        </div>
+        <div class="col-md-8 col-sm-10 text-center">
+        </div>
+        <div class="col-md-2 col-sm-1 bg-right">
+            <img src="img/texture_1.png" class="img-responsive">
+        </div>
+    </div>
+
+    <div class="row vk_comments">
+        <div class="col-md-2 hidden-sm hidden-xs bg-left bg-pattern">
+        </div>
+        <div class="col-md-8 col-sm-12 col-xs-12 comments_dvs resize">
+            <div class="checkbox ornament text-center">
+                <label>
+                    <input type="checkbox" checked id="ornament"> Хочу красоты!
+                </label>
+            </div>
             <div id="vk_comments"></div>
+        </div>
+        <div class="col-md-2 hidden-sm hidden-xs bg-right bg-pattern">
         </div>
     </div>
 </div>
 
-
 <div class="jumbotron footer">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12 col-sm-12 text-center">
+            <div class="col-md-2 col-sm-2 hidden-xs text-right">
+                <div id="tree"></div>
+            </div>
+            <div class="col-md-8 col-sm-8 text-center">
                 <h6>Счётчик флагов и просмотров:</h6>
                 <div class="counter-block">
                     <a href="https://s09.flagcounter.com/more/N4t"> <img src="https://s09.flagcounter.com/countxl/N4t/bg_E6E3DB/txt_333333/border_E6E3DB/columns_6/maxflags_30/viewers_3/labels_1/pageviews_1/flags_0/percent_0/" alt="Счётчик флагов и просмотров" border="0" class="img-responsive"></a>
                 </div>
+            </div>
+            <div class="col-md-2 col-sm-2 hidden-xs">
+                <img src="img/snowman.png" class="img-responsive">
             </div>
         </div>
     </div>
@@ -163,10 +319,28 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+<!--script src="js/newyear.js"></script-->
+<script src="js/balls.js"></script>
+<script src="js/snow.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
 <script src="js/script.js"></script>
 
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+ym(69823696, "init", {
+clickmap:true,
+trackLinks:true,
+accurateTrackBounce:true,
+webvisor:true
+});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/69823696" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 
 </body>
 </html>
