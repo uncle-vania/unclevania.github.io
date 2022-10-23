@@ -69,3 +69,11 @@ $('#ornament').change(function(){
         $('.bg-pattern').removeClass('bg-pattern').addClass('bg-none');
     }
 })
+
+$('.breadcrumb li a').has('i.fa-twitch, i.fa-odnoklassniki').click(function(){
+    let href = this.getAttribute('href');
+    // Замена parent у twitch
+    href = href.replace('&parent=twitch.tv', '&parent=' + document.location.hostname);
+    $('.embed-responsive.video iframe').attr('src', href);
+    return false;
+});
