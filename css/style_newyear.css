@@ -310,3 +310,14 @@ a:focus, a:hover {
 .panel-body-ny p {
     margin-bottom: 5px;
 }
+
+
+.panel a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.panel a:focus, .panel a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
