@@ -70,7 +70,7 @@ $('#ornament').change(function(){
     }
 })
 
-$('.breadcrumb li a').has('i.fa-twitch, i.fa-odnoklassniki').click(function(){
+$('.breadcrumb li a').has('i.fa-twitch, i.fa-odnoklassniki, i.fa-vk').click(function(){
     let href = this.getAttribute('href');
     // Замена parent у twitch
     href = href.replace('&parent=twitch.tv', '&parent=' + document.location.hostname);
